@@ -1,0 +1,8 @@
+D:\fIta amalia_X PPLG 2\praktik 7.3 fungsi\praktik 7.3 fungsi\bin\Debug\praktik 7.3 fungsi.exe.config
+D:\fIta amalia_X PPLG 2\praktik 7.3 fungsi\praktik 7.3 fungsi\bin\Debug\praktik 7.3 fungsi.exe
+D:\fIta amalia_X PPLG 2\praktik 7.3 fungsi\praktik 7.3 fungsi\bin\Debug\praktik 7.3 fungsi.pdb
+D:\fIta amalia_X PPLG 2\praktik 7.3 fungsi\praktik 7.3 fungsi\obj\Debug\praktik 7.3 fungsi.csproj.AssemblyReference.cache
+D:\fIta amalia_X PPLG 2\praktik 7.3 fungsi\praktik 7.3 fungsi\obj\Debug\praktik 7.3 fungsi.csproj.SuggestedBindingRedirects.cache
+D:\fIta amalia_X PPLG 2\praktik 7.3 fungsi\praktik 7.3 fungsi\obj\Debug\praktik 7.3 fungsi.csproj.CoreCompileInputs.cache
+D:\fIta amalia_X PPLG 2\praktik 7.3 fungsi\praktik 7.3 fungsi\obj\Debug\praktik 7.3 fungsi.exe
+D:\fIta amalia_X PPLG 2\praktik 7.3 fungsi\praktik 7.3 fungsi\obj\Debug\praktik 7.3 fungsi.pdb

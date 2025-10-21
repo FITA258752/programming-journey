@@ -1,0 +1,3 @@
+D:\fIta amalia_X PPLG 2\praktik 6.6\praktik 6.6\obj\Debug\praktik 6.6.csproj.AssemblyReference.cache
+D:\fIta amalia_X PPLG 2\praktik 6.6\praktik 6.6\obj\Debug\praktik 6.6.csproj.SuggestedBindingRedirects.cache
+D:\fIta amalia_X PPLG 2\praktik 6.6\praktik 6.6\obj\Debug\praktik 6.6.csproj.CoreCompileInputs.cache

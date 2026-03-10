@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tugas Overflow</title>
+
+<style>
+
+body{
+font-family: Arial;
+margin: 20px;
+}
+
+/* Header */
+header{
+text-align: center;
+}
+
+/* Navigasi */
+nav a{
+display: inline-block;
+background-color: rgba(18, 173, 225, 0.879);
+padding: 10px 15px;
+margin: 5px;
+text-decoration: none;
+color: black;
+border-radius: 5px;
+}
+
+/* Kotak artikel */
+.artikel{
+width: 300px;
+height: 180px;
+border: 2px solid black;
+margin-bottom: 70px;
+padding: 10px;
+}
+
+/* Overflow */
+.visible{
+overflow: visible;
+}
+
+.hidden{
+overflow: hidden;
+}
+
+.scroll{
+overflow: scroll;
+}
+
+.auto{
+overflow: auto;
+}
+
+img{
+width: 100%;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Website Produk</h1>
+</header>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Product</a>
+<a href="#">Contact</a>
+</nav>
+
+<h2>Produk Kami</h2>
+
+<div class="artikel visible">
+<h3>Produk 1</h3>
+<p>
+Produk pertama adalah tas sekolah yang kuat dan nyaman digunakan setiap hari.
+Tas ini dibuat dari bahan berkualitas sehingga tahan lama dan tidak mudah
+rusak. Banyak siswa menggunakan tas ini karena desainnya sederhana tetapi
+tetap terlihat menarik. Tas ini juga memiliki banyak kantong sehingga dapat
+menyimpan buku, alat tulis, dan perlengkapan sekolah lainnya dengan rapi.
+</p>
+</div>
+
+<div class="artikel hidden">
+<h3>Produk 2</h3>
+<p>
+Produk kedua adalah sepatu olahraga yang sangat nyaman digunakan untuk
+berlari ataupun kegiatan olahraga lainnya. Sepatu ini memiliki bahan yang
+ringan sehingga tidak membuat kaki cepat lelah. Selain itu desainnya modern
+dan cocok digunakan oleh remaja maupun orang dewasa. Sepatu ini juga memiliki
+sol yang kuat sehingga tidak mudah rusak walaupun sering digunakan.
+</p>
+</div>
+
+<div class="artikel scroll">
+<h3>Produk 3</h3>
+<p>
+Produk ketiga adalah botol minum yang praktis dan mudah dibawa kemana saja.
+Botol ini terbuat dari bahan yang aman dan tidak mudah pecah. Kapasitasnya
+cukup besar sehingga dapat menyimpan air dalam jumlah yang cukup untuk
+kegiatan sehari hari. Banyak orang memilih botol ini karena desainnya yang
+sederhana, ringan, dan mudah dibersihkan setelah digunakan.
+</p>
+</div>
+
+<div class="artikel auto">
+<h3>Produk 4</h3>
+<p>
+Produk keempat adalah jaket yang cocok digunakan saat cuaca dingin atau saat
+bepergian. Jaket ini dibuat dari bahan yang hangat namun tetap ringan saat
+dipakai. Modelnya juga sangat menarik sehingga cocok digunakan oleh remaja.
+Selain itu jaket ini memiliki kantong yang cukup besar untuk menyimpan barang
+kecil seperti handphone atau dompet.
+</p>
+</div>
+
+</body>
+</html>

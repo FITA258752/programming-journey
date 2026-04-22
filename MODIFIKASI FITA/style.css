@@ -1,0 +1,76 @@
+body{
+    background: #e6f2ff;
+    font-family: Arial, sans-serif;
+}
+
+/* Judul */
+h2{
+    color: #333;
+    font-size: 36px;
+    text-align: center;
+    margin-top: 20px;
+    text-transform: uppercase;
+    background-color: #cce7ff;
+    padding: 10px;
+}
+
+/* Paragraf */
+p{
+    font-family: monospace;
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+/* Navbar */
+ul{
+    background: #4da6ff;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+li{
+    color: white;
+    background: #4da6ff;
+    display: block;
+    float: left;
+    padding: 10px 15px;
+    position: relative;
+}
+
+li a{
+    color: white;
+    text-decoration: none;
+}
+
+/* Hover merah seperti contoh */
+li:hover{
+    background: red;
+    cursor: pointer;
+}
+
+/* Dropdown */
+ul li ul{
+    background: #3399ff;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    margin-top: 10px;
+    left: 0;
+    display: none;
+}
+
+/* Muncul saat hover */
+ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+/* Isi dropdown */
+ul li ul li{
+    clear: both;
+    width: 100%;
+
+   
+}

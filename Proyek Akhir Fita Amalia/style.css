@@ -1,0 +1,412 @@
+/* ========== RESET & BASE ========== */
+/* Menghilangkan margin dan padding bawaan browser, dan mengatur box-sizing agar ukuran element lebih mudah dihitung */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Mengatur font dasar untuk seluruh halaman */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7e2d7;
+    color: #333333;
+    line-height: 1.6; /* Jarak antar baris teks agar mudah dibaca */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Menghapus garis bawah pada semua link */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ========== PROMO BAR ========== */
+/* Bar hitam kecil di paling atas halaman */
+.promo-bar {
+    background-color: #f2d4c3; /* Warna hitam */
+    color: #1a1a1a; /* Teks putih */
+    text-align: center; /* Teks rata tengah */
+    padding: 10px 20px; /* Jarak atas-bawah 10px, kiri-kanan 20px */
+    font-size: 13px; /* Ukuran font kecil */
+    font-weight: 500; /* Ketebalan font sedang */
+    letter-spacing: 0.5px; /* Jarak antar huruf */
+}
+
+/* Garis pemisah (|) di antara teks promo */
+.promo-bar .separator {
+    margin: 0 15px; /* Jarak kiri-kanan 15px */
+    opacity: 0.5; /* Buat sedikit transparan agar tidak terlalu mencolok */
+}
+
+/* ========== NAVBAR ========== */
+/* Wadah navigasi utama */
+.navbar {
+    display: flex; /* Menggunakan flexbox agar logo, menu, dan ikon sejajar horizontal */
+    justify-content: space-between; /* Membagi ruang: kiri, tengah, kanan */
+    align-items: center; /* Semua item rata tengah secara vertikal */
+    padding: 20px 5%; /* Jarak dalam: atas-bawah 20px, kiri-kanan 5% dari lebar layar */
+    background-color: #ffffff;
+    border-bottom: 1px solid #eeeeee; /* Garis tipis abu-abu di bawah navbar */
+}
+
+/* Logo Eleganta */
+.logo {
+    font-size: 28px; /* Ukuran font besar */
+    font-weight: 700; /* Tebal */
+    color: #8B5E3C; /* Warna cokelat muda/khaki yang elegan */
+    letter-spacing: 1px; /* Jarak antar huruf */
+}
+
+/* Daftar menu navigasi */
+.nav-links {
+    display: flex; /* Item menu sejajar horizontal */
+    list-style: none; /* Menghapus titik (bullet) pada daftar */
+    gap: 30px; /* Jarak antar menu 30px */
+}
+
+/* Teks pada menu navigasi */
+.nav-links a {
+    font-size: 15px;
+    font-weight: 500;
+    color: #555555; /* Warna abu-abu gelap */
+    transition: color 0.3s; /* Membuat animasi perubahan warna halus saat hover */
+}
+
+/* Efek saat kursor diarahkan ke menu */
+.nav-links a:hover {
+    color: #8B5E3C; /* Berubah menjadi cokelat */
+}
+
+/* Wadah ikon search & cart */
+.nav-icons {
+    display: flex;
+    gap: 15px; /* Jarak antar ikon */
+}
+
+/* Tombol ikon */
+.icon-btn {
+    color: #333333;
+    transition: color 0.3s, transform 0.3s; /* Animasi halus untuk warna dan pergerakan */
+}
+
+/* Efek saat kursor diarahkan ke ikon */
+.icon-btn:hover {
+    color: #8B5E3C;
+    transform: translateY(-2px); /* Ikon sedikit terangkat ke atas */
+}
+
+/* ========== HERO SECTION ========== */
+/* Bagian besar di bawah navbar berisi judul dan gambar utama */
+.hero {
+    display: flex; /* Flexbox untuk menyejajarkan teks dan gambar */
+    align-items: center; /* Rata tengah vertikal */
+    justify-content: space-between; /* Teks di kiri, gambar di kanan */
+    padding: 80px 5%; /* Jarak cukup besar agar tidak menempel tepi */
+    background-color: #f7e2d7; /* Warna latar krem sangat muda / putih gading */
+    min-height: 80vh; /* Tinggi minimum 80% dari tinggi layar */
+}
+
+/* Wadah teks di sebelah kiri hero */
+.hero-content {
+    max-width: 550px; /* Batas lebar teks agar tidak terlalu melebar ke kanan */
+}
+
+/* Label "New Collection" */
+.badge {
+    display: inline-block; /* Bisa diberi padding */
+    background-color: #8B5E3C; /* Latar cokelat */
+    color: #ffffff; /* Teks putih */
+    padding: 6px 16px; /* Jarak dalam */
+    border-radius: 20px; /* Membuat ujungnya membulat (seperti kapsul) */
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase; /* Huruf menjadi kapital semua */
+    letter-spacing: 1px;
+    margin-bottom: 20px; /* Jarak ke elemen di bawahnya (h1) */
+}
+
+/* Judul utama "Temukan Tas Terbaik" */
+.hero-content h1 {
+    font-size: 52px; /* Ukuran font sangat besar */
+    font-weight: 700; /* Paling tebal */
+    line-height: 1.2; /* Jarak antar baris */
+    color: #1a1a1a;
+    margin-bottom: 20px;
+}
+
+/* Deskripsi paragraf di bawah judul */
+.hero-content p {
+    font-size: 16px;
+    color: #666666;
+    margin-bottom: 35px; /* Jarak ke tombol */
+}
+
+/* Wadah kedua tombol */
+.hero-buttons {
+    display: flex;
+    gap: 15px; /* Jarak antar tombol */
+}
+
+/* Tombol utama "Belanja Sekarang" */
+.btn-primary {
+    background-color: #1a1a1a; /* Warna hitam */
+    color: #ffffff;
+    padding: 14px 32px; /* Jarak dalam (atas-bawah, kiri-kanan) */
+    border-radius: 30px; /* Membuat tombol berbentuk kapsul */
+    font-weight: 600;
+    font-size: 14px;
+    transition: background-color 0.3s, transform 0.3s; /* Animasi halus */
+}
+
+/* Efek hover tombol utama */
+.btn-primary:hover {
+    background-color: #8B5E3C; /* Berubah jadi cokelat */
+    transform: translateY(-3px); /* Terangkat sedikit ke atas */
+}
+
+/* Tombol sekunder "Lihat Koleksi" */
+.btn-secondary {
+    border: 2px solid #1a1a1a; /* Hanya garis tepi hitam, tanpa latar */
+    color: #1a1a1a;
+    padding: 12px 32px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+/* Efek hover tombol sekunder */
+.btn-secondary:hover {
+    background-color: #1a1a1a; /* Latar berubah hitam */
+    color: #ffffff; /* Teks berubah putih */
+}
+
+/* Gambar di sebelah kanan hero */
+.hero-image {
+    flex: 1; /* Mengambil sisa ruang di kanan */
+    max-width: 500px; /* Batas lebar maksimal gambar */
+    margin-left: 50px; /* Jarak dari teks di kiri */
+}
+
+/* Gambar itu sendiri */
+.hero-image img {
+    width: 100%; /* Lebar penuh sesuai wadahnya */
+    height: auto; /* Tinggi menyesuaikan secara proporsional */
+    border-radius: 20px; /* Sudut gambar membulat */
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1); /* Memberikan efek bayangan lembut di bawah gambar */
+}
+
+/* ========== CATEGORIES SECTION ========== */
+/* Bagian 3 kartu kategori tas */
+.categories {
+    padding: 80px 5%; /* Jarak luar */
+    text-align: center; /* Judul rata tengah */
+}
+
+/* Judul "Kategori Rekomendasi" */
+.categories h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 50px; /* Jarak ke kartu di bawahnya */
+    color: #1a1a1a;
+}
+
+/* Wadah 3 kartu agar sejajar horizontal */
+.card-container {
+    display: flex; /* Kartu sejajar kesamping */
+    justify-content: center; /* Rata tengah */
+    gap: 30px; /* Jarak antar kartu */
+    flex-wrap: wrap; /* Jika layar sempit, kartu akan turun ke bawah otomatis (responsif) */
+}
+
+/* Desain 1 kartu individu */
+.card {
+    width: 350px; /* Lebar tetap kartu */
+    background-color: #ffffff;
+    border-radius: 15px; /* Sudut membulat */
+    overflow: hidden; /* Memastikan gambar tidak keluar dari sudut membulat */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05); /* Bayangan sangat tipis */
+    transition: transform 0.4s, box-shadow 0.4s; /* Animasi halus saat hover */
+    border: 1px solid #f0f0f0; /* Garis tipis abu-abu */
+}
+
+/* Efek hover pada kartu */
+.card:hover {
+    transform: translateY(-10px); /* Kartu terangkat 10px ke atas */
+    box-shadow: 0 20px 40px rgba(139, 94, 60, 0.15); /* Bayangan berubah sedikit cokelat */
+}
+
+/* Wadah gambar di dalam kartu */
+.card-image {
+    width: 100%;
+    height: 300px; /* Tinggi gambar tetap */
+    overflow: hidden; /* Menyembunyikan bagian gambar yang berlebih */
+}
+
+/* Gambar di dalam kartu */
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Memastikan gambar terpotong rapi dan memenuhi kotak tanpa terdistorsi */
+    transition: transform 0.6s; /* Animasi zoom lambat */
+}
+
+/* Saat kartu di-hover, gambar akan sedikit zoom in */
+.card:hover .card-image img {
+    transform: scale(1.08); /* Memperbesar gambar 8% */
+}
+
+/* Teks di dalam kartu */
+.card-content {
+    padding: 25px; /* Jarak teks dari tepi kartu */
+    text-align: left; /* Teks rata kiri */
+}
+
+/* Judul nama tas (Bagpack, dll) */
+.card-content h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #1a1a1a;
+}
+
+/* Deskripsi tas */
+.card-content p {
+    font-size: 14px;
+    color: #777777;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Tombol "Belanja Sekarang" di dalam kartu */
+.btn-card {
+    display: inline-block; /* Agar bisa diberi padding */
+    font-size: 13px;
+    font-weight: 600;
+    color: #8B5E3C; /* Teks warna cokelat */
+    border-bottom: 2px solid #8B5E3C; /* Garis bawah cokelat */
+    padding-bottom: 4px; /* Jarak teks ke garis bawah */
+    transition: color 0.3s, border-color 0.3s;
+}
+
+/* Efek hover tombol kartu */
+.btn-card:hover {
+    color: #5a3a22; /* Warna cokelat gelap */
+    border-bottom-color: #5a3a22;
+}
+
+/* ========== FOOTER ========== */
+/* Bagian bawah halaman */
+.footer {
+    background-color:#f2d4c3; /* Warna hitam */
+    color: #1a1a1a; /* Teks abu-abu terang */
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 14px;
+    margin-top: auto; /* Jarak dari seksi kartu */
+}
+
+/* ========== RESPONSIF (Tampilan Mobile/Tablet) ========== */
+/* Layar dengan lebar maksimal 768px (Tablet & HP) */
+@media (max-width: 768px) {
+    /* Hero menjadi susunan atas-bawah (bukan kiri-kanan) */
+    .hero {
+        flex-direction: column; /* Elemen disusun vertikal */
+        text-align: center; /* Teks rata tengah */
+        padding-top: 50px;
+        min-height: auto; /* Tinggi menyesuaikan konten */
+    }
+
+    /* Gambar hero berpindah ke bawah teks */
+    .hero-image {
+        margin-left: 0; /* Hilangkan jarak kiri */
+        margin-top: 40px; /* Jarak dari teks di atasnya */
+        max-width: 100%; /* Gambar memenuhi layar */
+    }
+
+    /* Tombol rata tengah */
+    .hero-buttons {
+        justify-content: center; 
+    }
+
+    /* Judul hero mengecil di HP */
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    /* Kartu kategori menjadi susunan atas-bawah */
+    .card-container {
+        flex-direction: column; 
+        align-items: center; /* Rata tengah */
+    }
+    
+    /* Lebar kartu menyesuaikan layar HP */
+    .card {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+   
+/* Layar dengan lebar maksimal 480px (HP kecil) */
+@media (max-width: 480px) {
+    /* Menu navigasi disembunyikan di HP kecil untuk menghemat ruang */
+    .nav-links {
+        display: none; 
+    }
+    
+    /* Promobar teks agak mengecil dan rapat */
+    .promo-bar {
+        font-size: 11px;
+    }
+    .promo-bar .separator {
+        margin: 0 5px;
+    }
+
+    /* EFEK SCROLL HALUS */
+html {
+    scroll-behavior: smooth;
+}
+
+/* SECTION TENTANG & KONTAK */
+.info-section {
+    padding: 80px 5%;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.info-section.bg-krem {
+    background-color: #faf8f5;
+}
+
+.info-section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+}
+
+.info-section p {
+    font-size: 16px;
+    color: #666666;
+    max-width: 700px;
+    margin: 0 auto 20px;
+    line-height: 1.8;
+}
+
+.kontak-info {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.kontak-info p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #8B5E3C;
+}
+}
